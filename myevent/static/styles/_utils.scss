@@ -1,0 +1,49 @@
+@import 'variables';
+
+@mixin centralize {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin rounded_button($background_color, $color) {
+  display: block;
+  background-color: $background_color;
+  color: $color;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: darken($background_color, 10%);
+  }
+}
+
+@mixin flex_space_between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin table_section {
+  display: flex;
+  flex-direction: column;
+  margin: 30px auto;
+
+  h3 {
+    font-size: 1.5em;
+    color: $primary_font;
+  }
+}
+
+@mixin success_tag {
+  background-color: $success;
+  color: $white !important;
+  border-radius: 5px;
+  padding: 5px 10px;
+}

@@ -1,0 +1,84 @@
+@import '../variables';
+@import '../utils';
+
+.events-table {
+  .styled-table {
+    border-collapse: separate; 
+    border-spacing: 0; 
+    font-size: 0.9em;
+    min-width: 300px;
+    max-width: 380px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    margin: 0 auto;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  thead {
+    tr {
+      background-color: $primary;
+      color: $white;
+      text-align: left;
+      font-weight: bold;
+    }
+
+    th:first-child {
+      border-top-left-radius: 10px;
+    }
+
+    th:last-child {
+      border-top-right-radius: 10px;
+    }
+  }
+
+  th i {
+    margin-left: 5px;
+  }
+
+  th, td {
+    padding: 6px 12px;
+  }
+
+  tbody {
+    tr {
+      border-bottom: 1px solid $light_gray;
+    }
+
+    tr:nth-of-type(even) {
+      background-color: $white;
+    }
+
+    tr:last-of-type td:first-child {
+      border-bottom-left-radius: 10px; 
+    }
+
+    tr:last-of-type td:last-child {
+      border-bottom-right-radius: 10px;
+    }
+    
+    tr:hover {
+      background-color: $background_color;
+    }
+  }
+}
+
+.success-tag {
+  @include success_tag;
+}
+
+.actions {
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+
+  a {
+    text-decoration: none;
+    color: $primary_font;
+    transition: color 0.3s;
+    cursor: pointer;
+
+    &:hover {
+      color: $primary;
+    }
+  }
+}

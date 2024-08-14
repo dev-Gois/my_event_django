@@ -1,0 +1,10 @@
+@import "../variables";
+@import "../utils";
+
+.login-button {
+  @include rounded_button($success, $white);
+}
+
+.logout-button {
+  @include rounded_button($error, $white);
+}

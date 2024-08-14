@@ -1,0 +1,51 @@
+@import 'variables'; // Importa suas variáveis, como cores e fontes
+@import 'utils';     // Importa utilitários, como mixins e funções
+
+.form {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  background-color: $white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+  h2 {
+    font-size: 2rem;
+    color: $primary_font;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+
+  form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+    label {
+      display: block;
+      color: $primary_font;
+    }
+
+    input, select {
+      padding: 0.5rem;
+      font-family: $font_family;
+    }
+
+    button {
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      font-weight: bold;
+      color: $white;
+      background-color: $primary;
+      border: none;
+      border-radius: 0.25rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      grid-column: span 2;
+      margin-top: 1rem;
+
+      &:hover {
+        background-color: darken($primary, 10%);
+      }
+    }
+  }
+}

@@ -1,0 +1,40 @@
+/* line 4, static/styles/components/event_info.scss */
+.event-container {
+  background-color: #FFFFFF;
+  padding: 1rem;
+  border-radius: 1rem;
+  margin: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s;
+  width: 100%; }
+
+/* line 14, static/styles/components/event_info.scss */
+.event-header {
+  font-size: 2rem;
+  color: #274877; }
+
+/* line 19, static/styles/components/event_info.scss */
+.event-content {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+  flex-direction: column; }
+  /* line 25, static/styles/components/event_info.scss */
+  .event-content .attribute {
+    display: flex;
+    flex-direction: column;
+    text-align: center; }
+    /* line 29, static/styles/components/event_info.scss */
+    .event-content .attribute .label {
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem; }
+  /* line 37, static/styles/components/event_info.scss */
+  .event-content .attribute-group {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-evenly; }
+  /* line 43, static/styles/components/event_info.scss */
+  .event-content p {
+    color: #267FFF; }

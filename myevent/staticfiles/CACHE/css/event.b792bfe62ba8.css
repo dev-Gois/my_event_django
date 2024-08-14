@@ -1,0 +1,41 @@
+/* line 4, static/styles/event.scss */
+.event-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem; }
+  /* line 9, static/styles/event.scss */
+  .event-section .event-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; }
+    /* line 14, static/styles/event.scss */
+    .event-section .event-content .event-card {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 15vw;
+      padding: 1rem;
+      border-radius: 1rem;
+      background-color: #FFFFFF;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      transition: box-shadow 0.3s;
+      cursor: pointer; }
+      /* line 26, static/styles/event.scss */
+      .event-section .event-content .event-card:hover {
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); }
+    /* line 31, static/styles/event.scss */
+    .event-section .event-content .event-datetime {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1rem;
+      color: #274877; }
+    /* line 37, static/styles/event.scss */
+    .event-section .event-content .event-location {
+      margin-top: 0.5rem; }
+    /* line 41, static/styles/event.scss */
+    .event-section .event-content .event-location, .event-section .event-content .event-citystate {
+      color: #267FFF;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem; }

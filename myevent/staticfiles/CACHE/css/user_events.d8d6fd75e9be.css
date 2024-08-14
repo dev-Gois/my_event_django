@@ -1,0 +1,28 @@
+/* line 4, static/styles/user_events.scss */
+.events-section {
+  display: flex;
+  flex-direction: column;
+  margin: 30px auto; }
+  /* line 38, static/styles/_utils.scss */
+  .events-section h3 {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    color: #274877; }
+  /* line 7, static/styles/user_events.scss */
+  .events-section .create-event-button {
+    display: block;
+    background-color: #267FFF;
+    color: #FFFFFF;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    max-width: 200px;
+    max-height: 50px; }
+    /* line 22, static/styles/_utils.scss */
+    .events-section .create-event-button:hover {
+      background-color: #0063f2; }

@@ -1,0 +1,39 @@
+/* line 4, static/styles/styled_form.scss */
+.form {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  background-color: #FFFFFF;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
+  /* line 12, static/styles/styled_form.scss */
+  .form h2 {
+    font-size: 2rem;
+    color: #274877;
+    margin-bottom: 1.5rem;
+    text-align: center; }
+  /* line 19, static/styles/styled_form.scss */
+  .form form {
+    display: grid;
+    grid-template-columns: 1fr; }
+    /* line 23, static/styles/styled_form.scss */
+    .form form label {
+      display: block;
+      color: #274877; }
+    /* line 28, static/styles/styled_form.scss */
+    .form form input {
+      padding: 0.5rem; }
+    /* line 33, static/styles/styled_form.scss */
+    .form form button {
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      font-weight: bold;
+      color: #FFFFFF;
+      background-color: #267FFF;
+      border: none;
+      border-radius: 0.25rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease; }
+      /* line 44, static/styles/styled_form.scss */
+      .form form button:hover {
+        background-color: #0063f2; }

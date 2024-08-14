@@ -1,0 +1,43 @@
+{% extends '_main_container.html' %}
+
+{% block title %}{{ event.name }}{%endblock%}
+{% load static %}
+
+{% block styles %}
+  <link rel="stylesheet" type="text/x-scss" href="{% static 'styles/event.scss' %}" media="screen">
+{% endblock %}
+
+{% block container_content %}
+  <section class="event-section">
+    <div class="event-header">
+      <div class="event-header-actions">
+        <a href="{% url 'edit_event' event.id %}" class="edit-event-button">
+          <i class="fa-solid fa-edit"></i> Editar
+        </a>
+        <a
+          onclick="deleteEvent(this)"
+          data-url="{% url 'delete_event' event.id %}"
+          class="delete-event-button"
+        >
+          <i class="fa-solid fa-trash"></i> Deletar
+        </a>
+      </div>
+    </div>
+    {% component "event_info" event=event %}{% endcomponent %}
+
+    <div class="event-container schedule-section">
+      <div class="schedule-header">
+        <div>
+          <i class="fa-solid fa-calendar"></i> Agenda
+        </div>
+        <a href="{% url 'create_schedule' event.id %}" class="create-schedule-button">
+          <i class="fa-solid fa-plus"></i> Criar Agenda
+        </a>
+      </div>
+    
+      {% component "schedules_table" schedules=schedules user_is_organizer=user_is_organizer %}{% endcomponent %}
+    </div>
+  </section>
+
+  <script src="{% static 'scripts/delete_event.js' %}"></script>
+{% endblock %}

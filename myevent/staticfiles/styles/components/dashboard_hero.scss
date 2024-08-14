@@ -1,0 +1,10 @@
+@import '../variables';
+
+.hero-container {
+  background-color: $primary;
+  color: $white;
+  padding: 20px 30px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+}

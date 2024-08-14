@@ -1,0 +1,33 @@
+/* line 4, static/styles/styled_form.scss */
+.form {
+  color: #274877;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 50rem;
+  align-self: center; }
+  /* line 13, static/styles/styled_form.scss */
+  .form form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem; }
+    /* line 18, static/styles/styled_form.scss */
+    .form form label {
+      font-size: 1.2rem;
+      display: block; }
+  /* line 24, static/styles/styled_form.scss */
+  .form h2 {
+    font-size: 2rem;
+    color: #274877;
+    margin-bottom: 1rem; }
+  /* line 30, static/styles/styled_form.scss */
+  .form .form-input {
+    margin: 1rem 0;
+    padding: 0.5rem;
+    font-family: "Poppins", sans-serif;
+    border-radius: 0.5rem;
+    border: 1px solid #274877; }
+    /* line 37, static/styles/styled_form.scss */
+    .form .form-input.form-input-error {
+      border: 1px solid red; }

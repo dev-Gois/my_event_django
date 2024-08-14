@@ -1,0 +1,20 @@
+/* line 3, static/styles/event.scss */
+.event-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%; }
+  /* line 10, static/styles/event.scss */
+  .event-section .event-container {
+    background-color: #FFFFFF;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s;
+    width: 100%; }
+  /* line 20, static/styles/event.scss */
+  .event-section .event-header {
+    font-size: 2rem;
+    color: #274877; }

@@ -1,0 +1,9 @@
+/* line 3, static/styles/events.scss */
+.events-section {
+  display: flex;
+  flex-direction: column;
+  margin: 30px auto; }
+  /* line 38, static/styles/_utils.scss */
+  .events-section h3 {
+    font-size: 1.5em;
+    color: #274877; }

@@ -1,0 +1,21 @@
+{% extends './_container.html' %}
+
+{% block title%}Login{% endblock %}
+
+{% block form %}
+  {% component "form_header" title="Bem vindo novamente!" subtitle="Digite suas credenciais para fazer login."%}{% endcomponent %}
+  <form action="{% url 'login' %}" method="post">
+    {% csrf_token %}
+    {% component "input" type="email" placeholder="Insira seu email" name="email" required="True" %}{% endcomponent %}
+    {% component "input" type="password" placeholder="Insira sua senha" name="password" required="True"%}{% endcomponent %}
+    {% component "button" variant="primary" type="submit" %}
+      Login
+    {% endcomponent %}
+  </form>
+{% endblock %}
+
+{% block redirect_link %}
+  <p class="redirect">
+    Ainda não possui uma conta? <a href="{% url 'register' %}">Cadastre-se</a>
+  </p>
+{% endblock %}

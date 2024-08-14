@@ -1,0 +1,12 @@
+@import "variables";
+
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding: 20px 30px;
+
+  h3 {
+    color: $primary-font;
+  }
+}

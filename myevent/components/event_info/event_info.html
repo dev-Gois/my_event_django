@@ -1,0 +1,84 @@
+{% load static %}
+{% load compress %}
+
+{% compress css %}
+  <link rel="stylesheet" type="text/x-scss" href="{% static 'styles/components/event_info.scss' %}" media="screen">
+{% endcompress %}
+
+<div class="event-container event-header">
+  <i class="fa-solid fa-briefcase"></i> Evento - {{ event.name }}
+</div>
+
+<div class="event-container event-content">
+  <div class="attribute-group">
+    <div class="attribute">
+      <div class="label">
+        <h4>Tipo do Evento</h4>
+        <i class="fa-solid fa-filter"></i>
+      </div>
+      <p>{{ self.event.type }}</p>
+    </div>
+    <div class="attribute">
+      <div class="label">
+        <h4>Local</h4>
+        <i class="fa-solid fa-filter"></i>
+      </div>
+      <p>{{ self.event.local }}</p>
+    </div>
+    <div class="attribute">
+      <div class="label">
+        <h4>Data Inicial</h4>
+        <i class="fa-solid fa-calendar-days"></i>
+      </div>
+      <p>{{ self.event.initial_date }}</p>
+    </div>
+    <div class="attribute">
+      <div class="label">
+        <h4>Data Encerramento</h4>
+        <i class="fa-solid fa-calendar-days"></i>
+      </div>
+      <p>{{ self.event.final_date }}</p>
+    </div>
+  </div>
+  <div class="attribute-group">
+    <div class="attribute">
+      <div class="label">
+        <h4>Cidade</h4>
+        <i class="fa-solid fa-city"></i>
+      </div>
+      <p>{{ self.event.city }}</p>
+    </div>
+
+    <div class="attribute">
+      <div class="label">
+        <h4>Estado</h4>
+        <i class="fa-solid fa-flag-usa"></i>
+      </div>
+      <p>{{ self.event.state }}</p>
+    </div>
+
+    <div class="attribute">
+      <div class="label">
+        <h4>Tickets Disponiveis</h4>
+        <i class="fa-solid fa-calendar-days"></i>
+      </div>
+      {% if self.event.limited_tickets %}
+        <p>{{ self.event.ticket_quantity }}</p>
+      {% else %}
+        <p class="success-tag">Ilimitado</p>
+      {% endif %}
+    </div>
+
+    <div class="attribute">
+      <div class="label">
+        <h4>Preço</h4>
+        <i class="fa-solid fa-money-bill"></i>
+      </div>
+      {% if self.event.ticket_price == 0 %}
+        <p class="success-tag">Grátis</p>
+      {% else %}
+        <p>R$ {{ self.event.ticket_price }}</p>
+      {% endif %}
+    </div>
+  </div>
+</div>

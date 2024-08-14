@@ -1,0 +1,32 @@
+/* line 4, static/styles/authentication.scss */
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; }
+
+/* line 9, static/styles/authentication.scss */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #FFFFFF;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
+  /* line 20, static/styles/authentication.scss */
+  .container .title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #274877; }
+  /* line 27, static/styles/authentication.scss */
+  .container .subtitle {
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+    color: #274877; }

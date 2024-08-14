@@ -1,0 +1,10 @@
+/* line 4, static/styles/schedule_form.scss */
+.schedule-form {
+  color: #274877;
+  font-size: 1.5rem;
+  text-align: center; }
+  /* line 9, static/styles/schedule_form.scss */
+  .schedule-form h2 {
+    font-size: 2rem;
+    color: #267FFF;
+    margin-bottom: 1rem; }

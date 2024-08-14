@@ -1,0 +1,49 @@
+/* line 4, static/styles/authentication.scss */
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  gap: 20px; }
+  /* line 10, static/styles/authentication.scss */
+  .main .redirect {
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: #A1B1C9; }
+    /* line 16, static/styles/authentication.scss */
+    .main .redirect a {
+      color: #267FFF;
+      text-decoration: none;
+      font-weight: 600; }
+      /* line 21, static/styles/authentication.scss */
+      .main .redirect a:hover {
+        text-decoration: underline; }
+
+/* line 28, static/styles/authentication.scss */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #FFFFFF;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
+  /* line 39, static/styles/authentication.scss */
+  .container .title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #274877; }
+  /* line 46, static/styles/authentication.scss */
+  .container .subtitle {
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin-bottom: 40px;
+    color: #A1B1C9;
+    opacity: 0.5; }

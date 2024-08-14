@@ -1,0 +1,75 @@
+/* line 5, static/styles/components/styled_table.scss */
+.events-table .styled-table {
+  border-collapse: separate;
+  border-spacing: 0;
+  font-size: 0.9em;
+  min-width: 300px;
+  max-width: 380px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  margin: 0 auto;
+  border-radius: 10px;
+  overflow: hidden; }
+
+/* line 18, static/styles/components/styled_table.scss */
+.events-table thead tr {
+  background-color: #267FFF;
+  color: #FFFFFF;
+  text-align: left;
+  font-weight: bold; }
+
+/* line 25, static/styles/components/styled_table.scss */
+.events-table thead th:first-child {
+  border-top-left-radius: 10px; }
+
+/* line 29, static/styles/components/styled_table.scss */
+.events-table thead th:last-child {
+  border-top-right-radius: 10px; }
+
+/* line 34, static/styles/components/styled_table.scss */
+.events-table th i {
+  margin-left: 5px; }
+
+/* line 38, static/styles/components/styled_table.scss */
+.events-table th, .events-table td {
+  padding: 6px 12px; }
+
+/* line 43, static/styles/components/styled_table.scss */
+.events-table tbody tr {
+  border-bottom: 1px solid #A1B1C9; }
+
+/* line 47, static/styles/components/styled_table.scss */
+.events-table tbody tr:nth-of-type(even) {
+  background-color: #FFFFFF; }
+
+/* line 51, static/styles/components/styled_table.scss */
+.events-table tbody tr:last-of-type td:first-child {
+  border-bottom-left-radius: 10px; }
+
+/* line 55, static/styles/components/styled_table.scss */
+.events-table tbody tr:last-of-type td:last-child {
+  border-bottom-right-radius: 10px; }
+
+/* line 59, static/styles/components/styled_table.scss */
+.events-table tbody tr:hover {
+  background-color: #cdd7ee; }
+
+/* line 65, static/styles/components/styled_table.scss */
+.success-tag {
+  background-color: #00E096;
+  color: #FFFFFF !important;
+  border-radius: 5px;
+  padding: 5px 10px; }
+
+/* line 69, static/styles/components/styled_table.scss */
+.actions {
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly; }
+  /* line 74, static/styles/components/styled_table.scss */
+  .actions a {
+    text-decoration: none;
+    color: #274877;
+    transition: color 0.3s; }
+    /* line 79, static/styles/components/styled_table.scss */
+    .actions a:hover {
+      color: #267FFF; }

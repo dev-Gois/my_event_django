@@ -1,0 +1,14 @@
+/* line 3, static/styles/components/logout_button.scss */
+.logout-button {
+  display: block;
+  color: #267FFF;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-top: 50px;
+  padding: 10px 20px;
+  border-radius: 10px; }
+  /* line 13, static/styles/components/logout_button.scss */
+  .logout-button:hover {
+    color: #0063f2;
+    transition: 0.3s; }

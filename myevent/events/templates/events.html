@@ -1,0 +1,20 @@
+{% extends '_main_container.html' %}
+
+{% block title %}Eventos{%endblock%}
+{% load static %}
+
+{% block styles %}
+  <link rel="stylesheet" type="text/x-scss" href="{% static 'styles/events.scss' %}" media="screen">
+{% endblock %}
+
+{% block container_content %}
+  <section class="events-section">
+    <div class="table-header">
+      <h3>Eventos</h3>
+      <a href="{% url 'create_event' %}" class="create-event-button">
+        <i class="fa-solid fa-plus"></i> Criar Evento
+      </a>
+    </div>
+    {% component "events_table" events=events user_is_organizer=user_is_organizer type="all" %}{% endcomponent %}
+  </section>
+{% endblock %}

@@ -1,0 +1,38 @@
+{% load static %}
+{% load compress %}
+
+{% compress css %}
+  <link rel="stylesheet" type="text/x-scss" href="{% static 'styles/components/event_card.scss' %}" media="screen">
+{% endcompress %}
+
+<div class="event-card" data-url="{% url 'event' event.id %}">
+  <div class="event-content"> 
+    <div class="event-datetime">
+      <p>
+        <i class="fa-regular fa-calendar-days"></i>
+        {{ self.event.initial_date }}
+      </p>
+      <p>
+        <i class="fa-regular fa-clock"></i>
+        {{ self.event.start_time }}
+      </p>
+    </div>
+    <h3>{{ self.event.name }}</h3>
+
+    <div class="event-location">
+      <i class="fa-solid fa-location-dot"></i>
+      <p>{{ self.event.local }}</p>
+    </div>
+
+    <div class="event-citystate">
+      <i class="fa-solid fa-earth-americas"></i>
+      <p>{{ self.event.city }}, {{ self.event.state }}</p>
+    </div>
+  </div>
+</div>
+
+<script>
+  $('.event-card').click(function() {
+    window.location.href = $(this).data('url');
+  });
+</script>

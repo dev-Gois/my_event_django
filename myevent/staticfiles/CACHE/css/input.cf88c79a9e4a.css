@@ -1,0 +1,17 @@
+/* line 3, static/styles/components/input.scss */
+.form-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #274877; }
+  /* line 13, static/styles/components/input.scss */
+  .form-input::placeholder {
+    color: #A1B1C9; }
+  /* line 17, static/styles/components/input.scss */
+  .form-input:focus {
+    outline: none;
+    border-color: #bfcfe6; }

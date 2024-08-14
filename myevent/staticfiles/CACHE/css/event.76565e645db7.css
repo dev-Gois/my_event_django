@@ -1,0 +1,10 @@
+/* line 3, static/styles/event.scss */
+.event-section {
+  display: flex;
+  flex-direction: column; }
+
+/* line 8, static/styles/event.scss */
+.event-container {
+  background-color: #FFFFFF;
+  padding: 1rem;
+  border-radius: 1rem; }

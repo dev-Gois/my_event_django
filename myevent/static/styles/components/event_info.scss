@@ -1,0 +1,46 @@
+@import '../variables';
+@import '../utils';
+
+.event-container {
+  background-color: $white;
+  padding: 1rem;
+  border-radius: 1rem;
+  margin: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s;
+  width: 100%;
+}
+
+.event-header {
+  font-size: 2rem;
+  color: $primary_font;
+}
+
+.event-content {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+  flex-direction: column;    
+
+  .attribute {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    .label {
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+  }
+
+  .attribute-group {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-evenly;
+  }
+
+  p {
+    color: $primary;
+  }
+}

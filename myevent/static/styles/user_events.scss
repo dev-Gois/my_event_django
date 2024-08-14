@@ -1,0 +1,19 @@
+@import 'utils';
+@import 'variables';
+
+.events-section {
+  @include table_section;
+
+  .table-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+
+    .create-event-button {
+      @include rounded_button($primary_font, $white);
+      font-size: 0.9rem;
+      max-width: 150px;
+    }
+  }
+}

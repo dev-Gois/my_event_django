@@ -1,0 +1,74 @@
+/* line 4, static/styles/styled_form.scss */
+.form {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  background-color: #FFFFFF;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
+  /* line 12, static/styles/styled_form.scss */
+  .form h2 {
+    font-size: 2rem;
+    color: #274877;
+    margin-bottom: 1.5rem;
+    text-align: center; }
+  /* line 19, static/styles/styled_form.scss */
+  .form form {
+    gap: 1rem; }
+    /* line 23, static/styles/styled_form.scss */
+    .form form .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem; }
+      /* line 28, static/styles/styled_form.scss */
+      .form form .form-group label {
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: #274877; }
+      /* line 34, static/styles/styled_form.scss */
+      .form form .form-group .form-input {
+        padding: 3rem;
+        border: 1px solid #274877;
+        border-radius: 0.25rem;
+        font-size: 1rem;
+        width: 100%;
+        box-sizing: border-box; }
+        /* line 42, static/styles/styled_form.scss */
+        .form form .form-group .form-input:focus {
+          border-color: #267FFF;
+          outline: none; }
+        /* line 47, static/styles/styled_form.scss */
+        .form form .form-group .form-input input {
+          appearance: none;
+          background: #cdd7ee;
+          padding: 0.75rem; }
+      /* line 55, static/styles/styled_form.scss */
+      .form form .form-group input[type='number'].form-input {
+        -moz-appearance: textfield; }
+        /* line 57, static/styles/styled_form.scss */
+        .form form .form-group input[type='number'].form-input::-webkit-inner-spin-button {
+          -webkit-appearance: none;
+          margin: 0; }
+        /* line 61, static/styles/styled_form.scss */
+        .form form .form-group input[type='number'].form-input::-webkit-outer-spin-button {
+          -webkit-appearance: none;
+          margin: 0; }
+      /* line 68, static/styles/styled_form.scss */
+      .form form .form-group .form-error {
+        color: #DB2C66;
+        font-size: 0.875rem; }
+    /* line 75, static/styles/styled_form.scss */
+    .form form button {
+      grid-column: span 2;
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      font-weight: bold;
+      color: #FFFFFF;
+      background-color: #267FFF;
+      border: none;
+      border-radius: 0.25rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease; }
+      /* line 87, static/styles/styled_form.scss */
+      .form form button:hover {
+        background-color: #0063f2; }

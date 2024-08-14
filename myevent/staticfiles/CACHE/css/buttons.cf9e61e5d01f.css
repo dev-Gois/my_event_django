@@ -1,0 +1,33 @@
+/* line 4, static/styles/components/buttons.scss */
+.login-button {
+  display: block;
+  background-color: #00E096;
+  color: #FFFFFF;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s; }
+  /* line 22, static/styles/_utils.scss */
+  .login-button:hover {
+    background-color: #00ad74; }
+
+/* line 8, static/styles/components/buttons.scss */
+.logout-button {
+  display: block;
+  background-color: #DB2C66;
+  color: #FFFFFF;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s; }
+  /* line 22, static/styles/_utils.scss */
+  .logout-button:hover {
+    background-color: #b51f51; }

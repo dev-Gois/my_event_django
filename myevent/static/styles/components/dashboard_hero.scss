@@ -1,0 +1,46 @@
+@import '../variables';
+
+.hero-container {
+  background-color: $primary;
+  color: $white;
+  padding: 20px;
+  border-radius: 20px;
+  display: flex;
+  width: 100%;
+  max-width: 50vw;
+  position: relative;
+  
+  .text-content {
+    flex: 1; 
+    padding-right: 20px;
+    
+    h1 {
+      font-size: 2em; 
+      margin-bottom: 20px;
+    }
+    
+    p {
+      font-size: 1em; 
+      margin-bottom: 10px;
+    }
+
+    .link {
+      margin-top: 30px;
+      font-size: 1.2em;
+      font-weight: 900;
+      color: $white;
+      transition: color 0.3s;
+      cursor: pointer;
+
+      &:hover {
+        color: darken($white, 10%);
+      }
+    }
+  }
+
+  img {
+    width: 50%;
+    position: relative;
+    transform: translate(20px, 20px);
+  }
+}

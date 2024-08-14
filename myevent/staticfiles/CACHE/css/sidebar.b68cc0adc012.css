@@ -1,0 +1,14 @@
+/* line 3, static/styles/components/sidebar.scss */
+.sidebar {
+  background-color: #FFFFFF;
+  height: 100%;
+  padding: 20px 30px;
+  border-radius: 10px 0 0 10px; }
+
+/* line 10, static/styles/components/sidebar.scss */
+.logo {
+  color: #267FFF;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 700; }

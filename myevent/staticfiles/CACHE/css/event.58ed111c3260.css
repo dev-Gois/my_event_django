@@ -1,0 +1,5 @@
+/* line 1, static/styles/event.scss */
+.event-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem; }

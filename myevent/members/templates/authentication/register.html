@@ -1,0 +1,23 @@
+{% extends './_container.html' %}
+
+{% block title%}Register{% endblock %}
+
+{% block form %}
+{% component "form_header" title="Seja bem vindo!" subtitle="Crie sua conta para acessar nossa plataforma."%}{% endcomponent %}
+  <form action="{% url 'register' %}" method="post">
+    {% csrf_token %}
+    {% component "input" placeholder="Insira seu nome" name="name" required="True"%}{% endcomponent %}
+    {% component "input" type="email" placeholder="Insira seu email" name="email" required="True" %}{% endcomponent %}
+    {% component "input" type="password" placeholder="Insira sua senha" name="password" required="True" %}{% endcomponent %}
+    {% component "input" type="password" placeholder="Confirme sua senha" name="confirm_password" required="True"%}{% endcomponent %}
+    {% component "button" variant="primary" type="submit" %}
+      Cadastrar
+    {% endcomponent %}
+  </form>
+{% endblock %}
+
+{% block redirect_link %}
+  <p class="redirect">
+    Já tem uma conta? <a href="{% url 'login' %}">Faça login</a>
+  </p>
+{% endblock %}

@@ -1,0 +1,16 @@
+@import '../variables';
+
+.title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: $primary_font;
+}
+
+.subtitle {
+  font-size: 0.8rem;
+  font-weight: 500;
+  margin-bottom: 40px;
+  color: $light_gray;
+  opacity: 0.5;
+}

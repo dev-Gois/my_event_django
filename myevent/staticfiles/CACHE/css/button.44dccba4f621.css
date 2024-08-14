@@ -1,0 +1,18 @@
+/* line 3, static/styles/components/button.scss */
+.btn {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer; }
+
+/* line 13, static/styles/components/button.scss */
+.primary {
+  color: #FFFFFF;
+  background-color: #267FFF;
+  transition: background-color 0.3s; }
+  /* line 18, static/styles/components/button.scss */
+  .primary:hover {
+    background-color: #0063f2; }

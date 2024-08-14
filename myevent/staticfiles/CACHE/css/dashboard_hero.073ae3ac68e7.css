@@ -1,0 +1,35 @@
+@charset "UTF-8";
+/* line 3, static/styles/components/dashboard_hero.scss */
+.hero-container {
+  background-color: #267FFF;
+  color: #FFFFFF;
+  padding: 20px 30px;
+  border-radius: 20px;
+  display: flex;
+  width: 100%; }
+  /* line 10, static/styles/components/dashboard_hero.scss */
+  .hero-container .text-content {
+    flex: 1;
+    /* Faz com que a área de texto ocupe o máximo possível de espaço disponível */
+    padding-right: 20px;
+    /* Adiciona espaço entre o texto e a imagem */ }
+    /* line 14, static/styles/components/dashboard_hero.scss */
+    .hero-container .text-content h1 {
+      font-size: 2.5em;
+      /* Aumenta o tamanho do título */
+      margin-bottom: 20px;
+      /* Adiciona mais espaço abaixo do título */ }
+    /* line 19, static/styles/components/dashboard_hero.scss */
+    .hero-container .text-content p {
+      font-size: 1.2em;
+      /* Aumenta o tamanho do texto dos parágrafos */
+      line-height: 1.6;
+      /* Ajusta o espaçamento entre as linhas */
+      margin-bottom: 15px;
+      /* Adiciona mais espaço abaixo de cada parágrafo */ }
+  /* line 27, static/styles/components/dashboard_hero.scss */
+  .hero-container img {
+    border-radius: 20px;
+    /* Adiciona bordas arredondadas à imagem */
+    width: 300px;
+    /* Define a largura da imagem */ }

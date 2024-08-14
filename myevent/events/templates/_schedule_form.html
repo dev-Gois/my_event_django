@@ -1,0 +1,20 @@
+{% extends '_main_container.html' %}
+
+{% load static %}
+
+{% block styles %}
+  <link rel="stylesheet" type="text/x-scss" href="{% static 'styles/schedule_form.scss' %}" media="screen">
+  <link rel="stylesheet" type="text/x-scss" href="{% static 'styles/event.scss' %}" media="screen">
+{% endblock %}
+
+{% block container_content %}
+  <section class="event-section">
+    {% component "event_info" event=event %}{% endcomponent %}
+    <div class="form event-container" >
+      <h2>Nova Agenda</h2>
+      {% block form %}
+      {% endblock %}
+    </div>
+  </section>
+  {{ form.media }}
+{% endblock %}

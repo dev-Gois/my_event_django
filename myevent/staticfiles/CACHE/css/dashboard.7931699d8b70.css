@@ -1,0 +1,34 @@
+/* line 3, static/styles/dashboard.scss */
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding: 20px 30px; }
+  /* line 9, static/styles/dashboard.scss */
+  .dashboard-container h3 {
+    color: #274877; }
+
+/* line 14, static/styles/dashboard.scss */
+.header-title {
+  font-size: 1.5em;
+  margin-bottom: 20px; }
+
+/* line 19, static/styles/dashboard.scss */
+.next-header {
+  display: flex;
+  align-items: center;
+  margin-top: 20px; }
+  /* line 24, static/styles/dashboard.scss */
+  .next-header .label {
+    font-size: 1.2em; }
+  /* line 29, static/styles/dashboard.scss */
+  .next-header a {
+    margin-left: auto;
+    font-size: 1.2em;
+    font-weight: 900;
+    color: #267FFF;
+    transition: color 0.3s;
+    cursor: pointer; }
+    /* line 37, static/styles/dashboard.scss */
+    .next-header a:hover {
+      color: #0063f2; }

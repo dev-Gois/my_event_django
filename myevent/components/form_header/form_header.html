@@ -1,0 +1,9 @@
+{% load static %}
+{% load compress %}
+
+{% compress css %}
+  <link rel="stylesheet" type="text/x-scss" href="{% static 'styles/components/form_header.scss' %}" media="screen">
+{% endcompress %}
+
+<h1 class="title">{{self.title}}</h1>
+<p class="subtitle">{{self.subtitle}}</p>

@@ -1,0 +1,11 @@
+{% load static %}
+{% load compress %}
+
+{% compress css%}
+  <link rel="stylesheet" type="text/x-scss" href="{% static 'styles/components/buttons.scss' %}" media="screen">
+{% endcompress%}
+
+<button class="login-button" onclick="window.location.href='{% url 'login' %}'">
+  <i class="fa-solid fa-sign-in"></i>
+  {{ self.text }}
+</button>

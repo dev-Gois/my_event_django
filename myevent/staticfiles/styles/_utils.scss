@@ -1,0 +1,23 @@
+@mixin centralize {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin rounded_button($background_color, $color) {
+  display: block;
+  background-color: $background_color;
+  color: $color;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: darken($background_color, 10%);
+  }
+}

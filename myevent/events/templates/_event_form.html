@@ -1,0 +1,47 @@
+{% extends '_main_container.html' %}
+
+{% load static %}
+
+{% block styles %}
+  <link rel="stylesheet" type="text/x-scss" href="{% static 'styles/styled_form.scss' %}" media="screen">
+  <link rel="stylesheet" type="text/x-scss" href="{% static 'styles/event.scss' %}" media="screen">
+{% endblock %}
+
+{% block container_content %}
+  <section class="event-section">
+    <div class="form event-container" >
+      <h2>Novo Evento</h2>
+      {% block form %}
+      {% endblock %}
+    </div>
+  </section>
+
+  <script src="{% static 'scripts/jquery.mask.min.js' %}"></script>
+  <script>
+    $(document).ready(function() {
+      $('#id_start_date').mask('00/00/0000');
+      $('#id_end_date').mask('00/00/0000');
+    
+      function toggleTicketQuantity() {
+        if ($('#id_limited_tickets').is(':checked')) {
+          $('#id_ticket_quantity').css('visibility', 'visible'); 
+          $('label[for="id_ticket_quantity"]').css('visibility', 'visible');
+        } else {
+          $('#id_ticket_quantity').css('visibility', 'hidden');  
+          $('label[for="id_ticket_quantity"]').css('visibility', 'hidden');
+          if ($('#id_ticket_quantity').val() == '') {
+            $('#id_ticket_quantity').val(0);
+          }
+        }
+      }
+    
+      toggleTicketQuantity();
+    
+      $('#id_limited_tickets').change(function() {
+        toggleTicketQuantity();
+      });
+    });
+
+  </script>
+{% endblock %}
+

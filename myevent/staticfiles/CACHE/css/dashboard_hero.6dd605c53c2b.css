@@ -1,0 +1,28 @@
+/* line 3, static/styles/components/dashboard_hero.scss */
+.hero-container {
+  background-color: #267FFF;
+  color: #FFFFFF;
+  padding: 20px 30px;
+  border-radius: 20px;
+  display: flex;
+  width: 100%;
+  max-width: 50vw;
+  max-height: 50vh;
+  position: relative; }
+  /* line 14, static/styles/components/dashboard_hero.scss */
+  .hero-container .text-content {
+    flex: 1;
+    padding-right: 20px; }
+    /* line 18, static/styles/components/dashboard_hero.scss */
+    .hero-container .text-content h1 {
+      font-size: 2em;
+      margin-bottom: 20px; }
+    /* line 23, static/styles/components/dashboard_hero.scss */
+    .hero-container .text-content p {
+      font-size: 1em;
+      margin-bottom: 10px; }
+  /* line 29, static/styles/components/dashboard_hero.scss */
+  .hero-container img {
+    width: 50%;
+    position: relative;
+    transform: translate(20px, 20px); }

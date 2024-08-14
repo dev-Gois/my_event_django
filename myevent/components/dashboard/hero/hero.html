@@ -1,0 +1,20 @@
+{% load static %}
+{% load compress %}
+
+{% compress css%}
+  <link rel="stylesheet" type="text/x-scss" href="{% static 'styles/components/dashboard_hero.scss' %}" media="screen">
+{% endcompress%}
+
+<div class="hero-area">
+  <div class="hero-container">
+    <div class="text-content">
+      <h1>Olá {{ self.user_name }}!</h1>
+      <p>Temos {{ self.today_events }}
+        {% if self.today_events > 1 %}eventos incríveis{% else %}evento incrível{% endif %}
+        na cidade esperando por você!</p>
+      <p>Explore shows, festas, e muito mais. Não perca o que está rolando! 🎉</p>
+      <p class="link" onclick="window.location.href = '{% url 'events' %}'">Ver eventos disponíveis<p>
+    </div>
+    <img src="{% static 'svgs/Calendar.svg' %}" alt="Calendar Icon" class="dashboard-hero-icon">
+  </div>
+</div>

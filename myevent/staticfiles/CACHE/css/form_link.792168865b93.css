@@ -1,0 +1,14 @@
+/* line 3, static/styles/components/form_link.scss */
+.redirect {
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+  color: #A1B1C9; }
+  /* line 9, static/styles/components/form_link.scss */
+  .redirect a {
+    color: #267FFF;
+    text-decoration: none;
+    font-weight: 600; }
+    /* line 14, static/styles/components/form_link.scss */
+    .redirect a:hover {
+      text-decoration: underline; }

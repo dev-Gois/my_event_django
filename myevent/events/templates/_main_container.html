@@ -1,0 +1,20 @@
+{% extends '_base.html' %}
+
+{% load static %}
+{% load compress %}
+
+{% block imports %}
+  {% compress css %}
+    <link rel="stylesheet" type="text/x-scss" href="{% static 'styles/main_container.scss' %}" media="screen">
+    {% block styles %}
+    {% endblock %}
+  {% endcompress %}
+{% endblock %}
+
+{% block content %}
+  <main class="main-container">
+    {% component "sidebar" %}{% endcomponent %}
+    {% block container_content %}
+    {% endblock %}
+  </main>
+{% endblock %}

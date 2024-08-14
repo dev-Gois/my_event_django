@@ -1,0 +1,7 @@
+/* line 4, static/styles/schedule_form.scss */
+.form {
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  margin: 0 auto;
+  align-self: center; }

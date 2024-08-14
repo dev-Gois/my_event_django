@@ -1,0 +1,14 @@
+{% load static %}
+{% load compress %}
+
+{% compress css%}
+  <link rel="stylesheet" type="text/x-scss" href="{% static 'styles/components/input.scss' %}" media="screen">
+{% endcompress%}
+
+<input
+  class="form-input"
+  placeholder="{{ self.placeholder }}"
+  type="{{ self.type }}"
+  name="{{ self.name }}"
+  {% if self.required %}required{% endif %}
+/>

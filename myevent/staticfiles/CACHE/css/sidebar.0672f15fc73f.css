@@ -1,0 +1,46 @@
+/* line 3, static/styles/components/sidebar.scss */
+.sidebar {
+  background-color: #FFFFFF;
+  height: 100%;
+  padding: 20px 15px;
+  border-radius: 10px 0 0 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  align-items: center;
+  text-align: center; }
+
+/* line 13, static/styles/components/sidebar.scss */
+.logo {
+  color: #274877;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 700; }
+  /* line 20, static/styles/components/sidebar.scss */
+  .logo:hover {
+    color: #1a3151;
+    transition: 0.3s; }
+
+/* line 26, static/styles/components/sidebar.scss */
+.routes {
+  margin-top: 50px; }
+  /* line 29, static/styles/components/sidebar.scss */
+  .routes a {
+    display: block;
+    color: #267FFF;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    border-radius: 10px; }
+    /* line 39, static/styles/components/sidebar.scss */
+    .routes a:hover {
+      color: #0063f2;
+      transition: 0.3s; }
+    /* line 44, static/styles/components/sidebar.scss */
+    .routes a.active {
+      background-color: #267FFF;
+      color: #FFFFFF; }
+    /* line 49, static/styles/components/sidebar.scss */
+    .routes a.active:hover {
+      background-color: #0063f2; }

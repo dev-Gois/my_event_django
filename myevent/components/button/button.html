@@ -1,0 +1,10 @@
+{% load static %}
+{% load compress %}
+
+{% compress css%}
+  <link rel="stylesheet" type="text/x-scss" href="{% static 'styles/components/button.scss' %}" media="screen">
+{% endcompress%}
+
+<button class="btn {{self.variant}}" type="{{self.type}}">
+  {{self.content}}
+</button>

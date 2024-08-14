@@ -1,0 +1,85 @@
+/* line 4, static/styles/event.scss */
+.event-section {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 0 auto; }
+  /* line 10, static/styles/event.scss */
+  .event-section .event-container {
+    background-color: #FFFFFF;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s;
+    width: 100%; }
+  /* line 20, static/styles/event.scss */
+  .event-section .event-header {
+    font-size: 2rem;
+    color: #274877; }
+  /* line 25, static/styles/event.scss */
+  .event-section .schedule-header {
+    font-size: 1.4rem;
+    color: #274877;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px; }
+  /* line 34, static/styles/event.scss */
+  .event-section .event-content {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+    flex-direction: column; }
+    /* line 40, static/styles/event.scss */
+    .event-section .event-content .attribute {
+      display: flex;
+      flex-direction: column;
+      text-align: center; }
+      /* line 44, static/styles/event.scss */
+      .event-section .event-content .attribute .label {
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem; }
+    /* line 52, static/styles/event.scss */
+    .event-section .event-content .attribute-group {
+      display: flex;
+      gap: 1rem;
+      justify-content: space-evenly; }
+    /* line 58, static/styles/event.scss */
+    .event-section .event-content p {
+      color: #267FFF; }
+
+/* line 64, static/styles/event.scss */
+.schedule-section {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 0 auto; }
+
+/* line 71, static/styles/event.scss */
+.success-tag {
+  background-color: #00E096;
+  color: #FFFFFF !important;
+  border-radius: 5px;
+  padding: 5px 10px; }
+
+/* line 75, static/styles/event.scss */
+.create-schedule-button {
+  display: block;
+  background-color: #274877;
+  color: #FFFFFF;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 0.9rem;
+  max-width: 150px; }
+  /* line 22, static/styles/_utils.scss */
+  .create-schedule-button:hover {
+    background-color: #1a3151; }

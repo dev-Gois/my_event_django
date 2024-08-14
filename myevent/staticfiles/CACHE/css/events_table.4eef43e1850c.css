@@ -1,0 +1,65 @@
+/* line 4, static/styles/components/events_table.scss */
+.events-table .styled-table {
+  border-collapse: separate;
+  border-spacing: 0;
+  font-size: 0.9em;
+  min-width: 300px;
+  max-width: 380px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  margin: 0 auto;
+  border-radius: 10px;
+  overflow: hidden; }
+
+/* line 17, static/styles/components/events_table.scss */
+.events-table thead tr {
+  background-color: #267FFF;
+  color: #FFFFFF;
+  text-align: left;
+  font-weight: bold; }
+
+/* line 24, static/styles/components/events_table.scss */
+.events-table thead th:first-child {
+  border-top-left-radius: 10px; }
+
+/* line 28, static/styles/components/events_table.scss */
+.events-table thead th:last-child {
+  border-top-right-radius: 10px; }
+
+/* line 33, static/styles/components/events_table.scss */
+.events-table th i {
+  margin-left: 5px; }
+
+/* line 37, static/styles/components/events_table.scss */
+.events-table th, .events-table td {
+  padding: 6px 12px; }
+
+/* line 42, static/styles/components/events_table.scss */
+.events-table tbody tr {
+  border-bottom: 1px solid #A1B1C9; }
+
+/* line 46, static/styles/components/events_table.scss */
+.events-table tbody tr:nth-of-type(even) {
+  background-color: #FFFFFF; }
+
+/* line 50, static/styles/components/events_table.scss */
+.events-table tbody tr:last-of-type td:first-child {
+  border-bottom-left-radius: 10px; }
+
+/* line 54, static/styles/components/events_table.scss */
+.events-table tbody tr:last-of-type td:last-child {
+  border-bottom-right-radius: 10px; }
+
+/* line 58, static/styles/components/events_table.scss */
+.events-table tbody tr:hover {
+  background-color: #cdd7ee; }
+
+/* line 64, static/styles/components/events_table.scss */
+.success-tag {
+  background-color: #00E096;
+  color: #FFFFFF;
+  border-radius: 5px;
+  padding: 5px 10px; }
+
+/* line 71, static/styles/components/events_table.scss */
+.actions {
+  text-align: center; }

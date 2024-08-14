@@ -1,0 +1,68 @@
+{% load static %}
+{% load compress %}
+
+{% compress css %}
+  <link rel="stylesheet" type="text/x-scss" href="{% static 'styles/components/styled_table.scss' %}" media="screen">
+{% endcompress %}
+
+<table class="events-table">
+  <thead>
+    <tr>
+      <th>Nome<i class="fa-solid fa-font"></i></th>
+      <th>Tipo<i class="fa-solid fa-filter"></i></th>
+      {% if self.type == "all" %}
+        <th>Organizador<i class="fa-solid fa-user"></i></th>
+      {% endif %}
+      <th>Data Inicial<i class="fa-solid fa-calendar"></i></th>
+      <th>Local<i class="fa-solid fa-map-pin"></i></th>
+      <th>Cidade<i class="fa-solid fa-map-pin"></i></th>
+      <th>Quantia de entradas<i class="fa-solid fa-ticket"></i></th>
+      <th>Preço da entrada<i class="fa-solid fa-money-bill"></i></th>
+      <th>Ações<i class="fa-solid fa-wand-magic-sparkles"></i></th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for event in self.events %}
+      <tr>
+        <td>{{ event.name }}</td>
+        <td>{{ event.type }}</td>
+        {% if self.type == "all" %}
+          <td>{{ event.organizer }}</td>
+        {% endif %}
+        <td>{{ event.initial_date }}</td>
+        <td>{{ event.local }}</td>
+        <td>{{ event.city }} - {{ event.state }}</td>
+        {% if event.limited_tickets %}
+        <td>{{ event.ticket_quantity }}</td>
+        {% else %}
+          <td class="success-tag">Ilimitado</td>
+        {% endif %}
+        {% if event.ticket_price == 0 %}
+          <td>
+            <span class="success-tag">Grátis</span>
+          </td>
+        {% else %}
+          <td>R$ {{ event.ticket_price }}</td>
+        {% endif %}
+        <td class="actions">
+          <a href="{% url 'event' event.id %}">
+            <i class="fa-solid fa-eye"></i>
+          </a>
+          {% if event.user_is_organizer %}
+            <a
+              onclick="deleteEvent(this)"
+              data-url="{% url 'delete_event' event.id %}"
+            >
+              <i class="fa-solid fa-trash"></i>
+            </a>
+            <a href="{% url 'edit_event' event.id %}">
+              <i class="fa-solid fa-edit"></i>
+            </a>
+          {% endif %}
+        </td>
+      </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+<script src="{% static 'scripts/delete_event.js' %}"></script>

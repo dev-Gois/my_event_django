@@ -1,0 +1,16 @@
+/* line 3, static/styles/components/login_button.scss */
+.login-button {
+  display: block;
+  color: #FFFFFF;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  background-color: #267FFF; }
+  /* line 17, static/styles/components/login_button.scss */
+  .login-button:hover {
+    background-color: #0063f2; }

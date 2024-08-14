@@ -1,0 +1,48 @@
+{% load static %}
+{% load compress %}
+
+{% compress css %}
+  <link rel="stylesheet" type="text/x-scss" href="{% static 'styles/components/sidebar.scss' %}" media="screen">
+{% endcompress %}
+
+<aside class="sidebar">
+  <div class="top">
+    <a class="logo" href="{% url 'dashboard' %}">
+      <i class="fa-solid fa-calendar-days"></i>
+      My Event
+    </a>
+  
+    <div class="routes">
+      <a href="{% url 'dashboard' %}"
+        class="{% if request.resolver_match.url_name == 'dashboard' %}active{% endif %}"
+      >
+        <i class="fa-solid fa-home"></i>
+        Dashboard
+      </a>
+
+      <a href="{% url 'events' %}"
+        class="{% if request.resolver_match.url_name == 'events' %}active{% endif %}"
+      >
+        <i class="fa-solid fa-calendar"></i>
+        Eventos
+      </a>
+
+      {% if user.is_authenticated %}
+        <a href="{% url 'user_events' %}"
+          class="{% if request.resolver_match.url_name == 'user_events' %}active{% endif %}"
+        >
+        <i class="fa-solid fa-list"></i>
+          Meus Eventos
+        </a>
+      {% endif %}
+    </div>
+  </div>
+
+  <div class="user">
+    {% if user.is_authenticated %}
+      {% component "logout_button" %}{% endcomponent %}
+    {% else %}
+      {% component "login_button" %}{% endcomponent %}
+    {% endif %}
+  </div>
+</aside>

@@ -1,0 +1,64 @@
+/* line 4, static/styles/styled_form.scss */
+.form {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  background-color: #FFFFFF;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
+  /* line 12, static/styles/styled_form.scss */
+  .form h2 {
+    font-size: 2rem;
+    color: #274877;
+    margin-bottom: 1.5rem;
+    text-align: center; }
+  /* line 19, static/styles/styled_form.scss */
+  .form form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem; }
+    /* line 26, static/styles/styled_form.scss */
+    .form form .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem; }
+      /* line 31, static/styles/styled_form.scss */
+      .form form .form-group label {
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: #274877; }
+      /* line 37, static/styles/styled_form.scss */
+      .form form .form-group .form-input {
+        padding: 10rem;
+        border: 1px solid #274877;
+        border-radius: 0.25rem;
+        font-size: 1rem;
+        width: 100%;
+        box-sizing: border-box; }
+        /* line 45, static/styles/styled_form.scss */
+        .form form .form-group .form-input:focus {
+          border-color: #267FFF;
+          outline: none; }
+        /* line 50, static/styles/styled_form.scss */
+        .form form .form-group .form-input input {
+          appearance: none;
+          background: #cdd7ee;
+          padding: 0.75rem; }
+      /* line 57, static/styles/styled_form.scss */
+      .form form .form-group .form-error {
+        color: #DB2C66;
+        font-size: 0.875rem; }
+    /* line 64, static/styles/styled_form.scss */
+    .form form button {
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      font-weight: bold;
+      color: #FFFFFF;
+      background-color: #267FFF;
+      border: none;
+      border-radius: 0.25rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease; }
+      /* line 76, static/styles/styled_form.scss */
+      .form form button:hover {
+        background-color: #0063f2; }

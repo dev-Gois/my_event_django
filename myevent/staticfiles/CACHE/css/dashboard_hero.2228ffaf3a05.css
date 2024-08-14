@@ -1,0 +1,22 @@
+/* line 3, static/styles/components/dashboard_hero.scss */
+.hero-container {
+  background-color: #267FFF;
+  color: #FFFFFF;
+  padding: 20px 30px;
+  border-radius: 20px;
+  display: flex; }
+  /* line 10, static/styles/components/dashboard_hero.scss */
+  .hero-container .text-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    /* line 17, static/styles/components/dashboard_hero.scss */
+    .hero-container .text-content h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px; }
+    /* line 22, static/styles/components/dashboard_hero.scss */
+    .hero-container .text-content p {
+      font-size: 1.2rem;
+      text-align: center; }

@@ -1,0 +1,6 @@
+/* line 1, static/styles/events.scss */
+.events-section {
+  display: flex;
+  flex-direction: column;
+  margin: 30px;
+  justify-content: center; }

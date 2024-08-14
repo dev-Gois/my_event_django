@@ -1,0 +1,41 @@
+@import "variables";
+
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding: 20px 30px;
+
+  h3 {
+    color: $primary-font;
+  }
+}
+
+.header-title {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+.next-header {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+
+  .label {
+    font-size: 1.2em;
+    
+  }
+
+  a {
+    margin-left: auto;
+    font-size: 1.2em;
+    font-weight: 900;
+    color: $primary;
+    transition: color 0.3s;
+    cursor: pointer;
+
+    &:hover {
+      color: darken($primary, 10%);
+    }
+  }
+}

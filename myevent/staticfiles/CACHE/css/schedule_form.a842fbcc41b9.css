@@ -1,0 +1,28 @@
+/* line 4, static/styles/schedule_form.scss */
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr; }
+  /* line 8, static/styles/schedule_form.scss */
+  form label {
+    display: block;
+    color: #274877; }
+  /* line 13, static/styles/schedule_form.scss */
+  form input, form select {
+    padding: 0.5rem;
+    font-family: "Poppins", sans-serif; }
+  /* line 18, static/styles/schedule_form.scss */
+  form button {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #FFFFFF;
+    background-color: #267FFF;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    grid-column: span 2;
+    margin-top: 1rem; }
+    /* line 31, static/styles/schedule_form.scss */
+    form button:hover {
+      background-color: #0063f2; }

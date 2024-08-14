@@ -1,0 +1,36 @@
+{% load static %}
+{% load compress %}
+
+{% compress css %}
+  <link rel="stylesheet" type="text/x-scss" href="{% static 'styles/components/event_carousel.scss' %}" media="screen">
+  <link rel="stylesheet" type="text/x-scss" href="{% static 'styles/owl_carousel/owl.carousel.scss' %}" media="screen">
+  <link rel="stylesheet" type="text/x-scss" href="{% static 'styles/owl_carousel/owl.theme.default.scss' %}" media="screen">
+{% endcompress %}
+
+<script src="{% static 'scripts/owl_carousel/owl.carousel.js' %}"></script>
+
+<div class="carousel-container">
+    <div class="owl-carousel owl-theme">
+        {% for event in events %}
+            {% component "event_card" event=event %}{% endcomponent %}
+        {% endfor %}
+    </div>
+</div>
+
+<script>
+  $('.owl-carousel').owlCarousel({
+    autoplay: true,
+    autoplayHoverPause: true,
+    responsive: {
+      0: {
+        items: 1
+      },
+      600: {
+        items: 3
+      },
+      1000: {
+        items: 5
+      }
+    }
+})
+</script>

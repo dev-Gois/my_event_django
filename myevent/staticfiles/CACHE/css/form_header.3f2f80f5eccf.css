@@ -1,0 +1,14 @@
+/* line 3, static/styles/components/form_header.scss */
+.title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #274877; }
+
+/* line 10, static/styles/components/form_header.scss */
+.subtitle {
+  font-size: 0.8rem;
+  font-weight: 500;
+  margin-bottom: 40px;
+  color: #A1B1C9;
+  opacity: 0.5; }

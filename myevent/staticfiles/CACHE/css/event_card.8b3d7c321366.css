@@ -1,0 +1,31 @@
+/* line 4, static/styles/components/event_card.scss */
+.event-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 12vw;
+  height: 25vh;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: #FFFFFF;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s; }
+
+/* line 17, static/styles/components/event_card.scss */
+.event-datetime {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  color: #274877; }
+
+/* line 23, static/styles/components/event_card.scss */
+.event-location {
+  margin-top: 0.5rem; }
+
+/* line 27, static/styles/components/event_card.scss */
+.event-location, .event-citystate {
+  color: #267FFF;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem; }

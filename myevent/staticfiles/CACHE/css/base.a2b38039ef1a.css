@@ -1,0 +1,12 @@
+/* line 3, static/styles/base.scss */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  overflow-y: auto; }
+
+/* line 11, static/styles/base.scss */
+body {
+  background-color: #cdd7ee;
+  font-family: "Poppins", sans-serif; }

@@ -1,0 +1,56 @@
+@import '../variables';
+
+.sidebar {
+  background-color: $white;
+  height: 100%;
+  padding: 20px 15px;
+  border-radius: 10px 0 0 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  align-items: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.logo {
+  color: $primary_font;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 700;
+
+  &:hover {
+    color: darken($primary_font, 10%);
+    transition: 0.3s;
+  }
+}
+
+.routes {
+  margin-top: 50px;
+
+  a {
+    display: block;
+    color: $primary;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    border-radius: 10px;
+
+    &:hover {
+      color: darken($primary, 10%);
+      transition: 0.3s;
+    }
+
+    &.active {
+      background-color: $primary;
+      color: $white;
+    }
+
+    &.active:hover {
+      background-color: darken($primary, 10%);
+    }
+  }
+}

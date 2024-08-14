@@ -1,0 +1,24 @@
+{% extends '../_base.html' %}
+
+{% load static %}
+{% load compress %}
+
+{% block imports %}
+  {% compress css %}
+    <link rel="stylesheet" type="text/x-scss" href="{% static 'styles/authentication.scss' %}" media="screen">
+    {% block styles %}
+    {% endblock %}
+  {% endcompress %}
+{% endblock %}
+
+{% block content %}
+  <main class="main">
+    <div class="container">
+      {% block form %}
+      {% endblock %}
+    </div>
+
+    {% block redirect_link %}
+    {% endblock %}
+  </main>
+{% endblock %}

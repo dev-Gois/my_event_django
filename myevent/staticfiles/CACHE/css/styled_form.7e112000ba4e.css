@@ -1,0 +1,69 @@
+/* line 4, static/styles/styled_form.scss */
+.form {
+  color: #274877;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 50rem;
+  align-self: center; }
+  /* line 13, static/styles/styled_form.scss */
+  .form form {
+    display: flex;
+    align-items: center;
+    width: 100%; }
+  /* line 19, static/styles/styled_form.scss */
+  .form h2 {
+    font-size: 2rem;
+    color: #274877;
+    margin-bottom: 1rem; }
+  /* line 25, static/styles/styled_form.scss */
+  .form .form-input {
+    margin: 1rem 0;
+    padding: 0.5rem;
+    font-family: "Poppins", sans-serif;
+    border-radius: 0.5rem;
+    border: 1px solid #274877; }
+    /* line 32, static/styles/styled_form.scss */
+    .form .form-input.form-input-error {
+      border: 1px solid red; }
+  /* line 37, static/styles/styled_form.scss */
+  .form .form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem 0; }
+    /* line 43, static/styles/styled_form.scss */
+    .form .form-group label {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem; }
+    /* line 48, static/styles/styled_form.scss */
+    .form .form-group input {
+      width: 100%;
+      padding: 0.5rem;
+      font-family: "Poppins", sans-serif;
+      border-radius: 0.5rem;
+      border: 1px solid #274877; }
+    /* line 56, static/styles/styled_form.scss */
+    .form .form-group select {
+      width: 100%;
+      padding: 0.5rem;
+      font-family: "Poppins", sans-serif;
+      border-radius: 0.5rem;
+      border: 1px solid #274877; }
+    /* line 64, static/styles/styled_form.scss */
+    .form .form-group .form-error {
+      color: red;
+      font-size: 1rem;
+      margin-top: 0.5rem; }
+    /* line 70, static/styles/styled_form.scss */
+    .form .form-group button {
+      margin-top: 1rem;
+      padding: 0.5rem 1rem;
+      font-size: 1.0rem;
+      font-family: "Poppins", sans-serif;
+      border-radius: 0.5rem;
+      border: 1px solid #267FFF;
+      background-color: #267FFF;
+      color: #FFFFFF;
+      cursor: pointer; }

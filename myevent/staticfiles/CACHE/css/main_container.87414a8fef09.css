@@ -1,0 +1,8 @@
+/* line 3, static/styles/main_container.scss */
+.main-container {
+  background-color: #F2F6FF;
+  border-radius: 10px;
+  margin: 20px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  height: 94vh; }

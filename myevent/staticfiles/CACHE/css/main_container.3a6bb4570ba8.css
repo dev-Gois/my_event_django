@@ -1,0 +1,9 @@
+/* line 3, static/styles/main_container.scss */
+.main-container {
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  padding: 20px;
+  height: 90vh; }

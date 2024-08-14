@@ -1,0 +1,10 @@
+/* line 3, static/styles/components/dashboard_hero.scss */
+.hero-container {
+  background-color: #267FFF;
+  color: #FFFFFF;
+  padding: 20px 30px;
+  border-radius: 20px;
+  display: flex; }
+  /* line 10, static/styles/components/dashboard_hero.scss */
+  .hero-container .text-content {
+    width: 100%; }

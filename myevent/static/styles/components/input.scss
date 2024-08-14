@@ -1,0 +1,21 @@
+@import '../variables';
+
+.form-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: $primary_font;
+
+  &::placeholder {
+    color: $light_gray;
+  }
+
+  &:focus {
+    outline: none;
+    border-color: $light_gray_2;
+  }
+}

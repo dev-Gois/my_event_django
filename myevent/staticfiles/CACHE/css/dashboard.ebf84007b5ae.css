@@ -1,0 +1,6 @@
+/* line 1, static/styles/dashboard.scss */
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding: 20px 30px; }

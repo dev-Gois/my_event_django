@@ -1,0 +1,43 @@
+/* line 3, static/styles/event.scss */
+.event-section {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 0 auto; }
+  /* line 9, static/styles/event.scss */
+  .event-section .event-container {
+    background-color: #FFFFFF;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s;
+    width: 100%; }
+  /* line 19, static/styles/event.scss */
+  .event-section .event-header {
+    font-size: 2rem;
+    color: #274877; }
+  /* line 24, static/styles/event.scss */
+  .event-section .event-content {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+    flex-direction: column; }
+    /* line 30, static/styles/event.scss */
+    .event-section .event-content .attribute {
+      display: flex;
+      flex-direction: column; }
+      /* line 34, static/styles/event.scss */
+      .event-section .event-content .attribute .label {
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem; }
+    /* line 42, static/styles/event.scss */
+    .event-section .event-content .attribute-group {
+      display: flex;
+      gap: 1rem;
+      justify-content: space-evenly; }
+    /* line 48, static/styles/event.scss */
+    .event-section .event-content p {
+      color: #267FFF; }

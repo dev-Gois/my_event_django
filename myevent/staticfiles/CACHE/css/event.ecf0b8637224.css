@@ -1,0 +1,40 @@
+/* line 3, static/styles/event.scss */
+.event-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%; }
+  /* line 10, static/styles/event.scss */
+  .event-section .event-container {
+    background-color: #FFFFFF;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s;
+    width: 100%; }
+  /* line 20, static/styles/event.scss */
+  .event-section .event-header {
+    font-size: 2rem;
+    color: #274877; }
+  /* line 25, static/styles/event.scss */
+  .event-section .event-content {
+    font-size: 1rem;
+    color: #274877;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    /* line 32, static/styles/event.scss */
+    .event-section .event-content .attribute {
+      display: flex;
+      flex-direction: column; }
+      /* line 36, static/styles/event.scss */
+      .event-section .event-content .attribute .label {
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem; }
+    /* line 44, static/styles/event.scss */
+    .event-section .event-content p {
+      color: #267FFF; }

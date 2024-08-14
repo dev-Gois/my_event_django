@@ -1,0 +1,57 @@
+@import 'variables';
+@import 'utils';
+
+.event-section {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 0 auto;
+
+  .schedule-header {
+    font-size: 1.5rem;
+    color: $primary_font;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+}
+
+.schedule-section {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.success-tag {
+  @include success_tag;
+}
+
+.create-schedule-button {
+  @include rounded_button($primary_font, $white);
+  font-size: 0.8rem;
+  max-width: 150px;
+}
+
+
+.event-header-actions {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+  margin-top: 30px
+}
+
+
+.edit-event-button {
+  @include rounded_button($primary, $white);
+  font-size: 0.8rem;
+  max-width: 150px;
+}
+
+.delete-event-button {
+  @include rounded_button($error, $white);
+  font-size: 0.8rem;
+  max-width: 150px;
+}

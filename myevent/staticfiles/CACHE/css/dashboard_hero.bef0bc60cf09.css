@@ -1,0 +1,31 @@
+@charset "UTF-8";
+/* line 3, static/styles/components/dashboard_hero.scss */
+.hero-container {
+  background-color: #267FFF;
+  color: #FFFFFF;
+  padding: 20px 30px;
+  border-radius: 20px;
+  display: flex;
+  width: 100%;
+  position: relative;
+  /* Define o container como referência para o posicionamento absoluto */ }
+  /* line 12, static/styles/components/dashboard_hero.scss */
+  .hero-container .text-content {
+    flex: 1;
+    padding-right: 20px; }
+    /* line 16, static/styles/components/dashboard_hero.scss */
+    .hero-container .text-content h1 {
+      font-size: 2.5em;
+      margin-bottom: 20px; }
+    /* line 21, static/styles/components/dashboard_hero.scss */
+    .hero-container .text-content p {
+      font-size: 1.2em;
+      line-height: 1.6;
+      margin-bottom: 15px; }
+  /* line 28, static/styles/components/dashboard_hero.scss */
+  .hero-container img {
+    width: 50%;
+    position: relative;
+    /* Permite que a imagem seja movida dentro do container */
+    transform: translate(20px, 20px);
+    /* Move a imagem parcialmente para fora do container */ }

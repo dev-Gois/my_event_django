@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  {% load static %}
+  {% load compress %}
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.css">
+
+  {% compress css %}
+    <link rel="stylesheet" type="text/x-scss" href="{% static 'styles/base.scss' %}" media="screen">
+  {% endcompress %}
+  
+  <link href="{% static 'fontawesomefree/css/fontawesome.css' %}" rel="stylesheet" type="text/css">
+  <link href="{% static 'fontawesomefree/css/brands.css' %}" rel="stylesheet" type="text/css">
+  <link href="{% static 'fontawesomefree/css/solid.css' %}" rel="stylesheet" type="text/css">
+  <script src="https://kit.fontawesome.com/33cb2f48e2.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="{% static 'scripts/jquery.min.js' %}"></script>
+  <script src="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.js"></script>
+  
+  {% block imports %}
+  {% endblock %}
+  <title>{% block title %}{% endblock %}</title>  
+  {% load livereload_tags %}
+  {% livereload_script %}
+</head>
+<body>
+  {% block content %}
+  {% endblock %}
+  <script>
+    {% if messages %}
+      const notyf = new Notyf();
+      {% for message in messages %}
+        notyf.open({
+          type: '{{ message.tags }}',
+          message: '{{ message }}',
+          position: { x: 'center', y: 'top' },
+          dismissible: true,
+          duration: 3000,
+        });
+      {% endfor %}
+    {% endif %}
+  </script>
+</body>
+</html>

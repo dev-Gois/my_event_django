@@ -1,0 +1,16 @@
+/* line 4, static/styles/schedule_form.scss */
+.schedule-form {
+  color: #274877;
+  font-size: 1.5rem;
+  text-align: center; }
+  /* line 9, static/styles/schedule_form.scss */
+  .schedule-form h2 {
+    font-size: 2rem;
+    color: #267FFF;
+    margin-bottom: 1rem; }
+  /* line 15, static/styles/schedule_form.scss */
+  .schedule-form .form-input {
+    margin: 1rem 0;
+    padding: 0.5rem;
+    font-family: "Poppins", sans-serif;
+    border-radius: 0.5rem; }
